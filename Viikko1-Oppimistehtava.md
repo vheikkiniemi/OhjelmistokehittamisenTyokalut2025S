@@ -59,6 +59,6 @@
    * Tee pieni testitiedosto (esim. `README.md`) ja tee ensimmäinen commit + push.
 
 > [!NOTE]  
-> Palauta yksi (1) kuvakaappaus, josta näkyy  
-> 1. selaimelta, että repo on private
-> 2. Visual Studio Codelta, commit + push meni läpi 
+> **Palauta yksi (1) kuvakaappaus, josta näkyy**  
+> **1. selaimelta, että repo on private**
+> **2. Visual Studio Codelta, commit + push meni läpi** 
