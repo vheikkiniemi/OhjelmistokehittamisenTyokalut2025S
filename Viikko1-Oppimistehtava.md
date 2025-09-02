@@ -109,6 +109,8 @@
    ✅ **Koodilohko**: kolmella heittomerkkillä (\`\`\`) merkittynä  
    ✅ **Lainaus**: `>` merkinnällä  
    ✅ **Vaakaerotin**: `---`  
+* Katso: [Markdown Cheat Sheet (GitHub)](https://www.markdownguide.org/cheat-sheet/)
+
 
 **3. Lisää oma sisältösi**
 
@@ -119,14 +121,6 @@
 
    * Tee commit ja push GitHubiin.
    * Tarkista selaimesta GitHubissa, että `harjoitus.md` näkyy oikein.
-
----
-
-### 💡 Vinkki
-
-Hyödyllinen materiaali:
-
-* [Markdown Cheat Sheet (GitHub)](https://www.markdownguide.org/cheat-sheet/)
 
 ---
 
