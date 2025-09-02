@@ -32,7 +32,7 @@ Opiskelija osaa käyttää keskeisiä ohjelmistokehittämisen työvälineitä:
 
 - **Versionhallinta:** GitHub & Git  
 - **Komentorivityökalut:** Bash, komentorivi (Windows), terminaali (Mac)  
-- **Editorit:** Visual Studio Code, Visual Studio  
+- **Editorit:** Visual Studio Code 
 - **Projektinhallinta:** Trello  
 - **Yhteistyö:** Teams, Zoom, Slack  
 - **Piirtotyökalut:** Draw.io  
@@ -49,6 +49,4 @@ Opiskelija osaa käyttää keskeisiä ohjelmistokehittämisen työvälineitä:
 ## 📅 Aikataulut
 
 - **Ilmoittautumisaika:** 14.04.2025 00:00 – 05.09.2025 00:00  
-- **Toteutusaika:** 03.09.2025 – 10.10.2025  
-
----
+- **Toteutusaika:** 03.09.2025 – 10.10.2025
