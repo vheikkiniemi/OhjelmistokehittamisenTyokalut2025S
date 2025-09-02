@@ -57,7 +57,7 @@
 > [!NOTE]  
 > **Palauta yksi (1) kuvakaappaus, josta näkyy**  
 > **1. selaimelta, että repo on private**  
-> **2. Visual Studio Codelta, commit + push meni läpi**  
+> **2. Visual Studio Codelta, että commit + push meni läpi**  
 
 ---
 
