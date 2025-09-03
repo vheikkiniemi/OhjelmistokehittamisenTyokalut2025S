@@ -95,7 +95,7 @@
 ## **📌 3. tehtävän vaiheet**
 
 **1. Luo tiedosto**
-   * Luo kloonaamasi repositorion juureen tiedosto nimeltä `harjoitus.md`.
+   * Luo kloonaamasi repositorion juureen tiedosto nimeltä `viikko1.md`.
 
 **2. Täytä tiedosto Markdown-syntaksilla**
 * Tiedoston tulee sisältää seuraavat elementit:
@@ -120,10 +120,10 @@
 **4. Tallenna ja julkaise**
 
    * Tee commit ja push GitHubiin.
-   * Tarkista selaimesta GitHubissa, että `harjoitus.md` näkyy oikein.
+   * Tarkista selaimesta GitHubissa, että `viikko1.md` näkyy oikein.
 
 ---
 
 > [!NOTE]  
-> **Palauta url-osoite harjoitus.md-tiedostoon**  
+> **Palauta url-osoite viikko1.md-tiedostoon**  
 
