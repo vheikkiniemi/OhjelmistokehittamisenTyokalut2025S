@@ -264,7 +264,7 @@
 ✅ **Commit →** tallennuspiste, jossa koodiin tehdyt muutokset kirjataan.  
 ✅ **Branch →** rinnakkainen kehityslinja (esim. `main`, `feature-x`).  
 ✅ **Merge →** yhdistää eri branchit yhteen.  
-✅ **Clone →** kopioi olemassa olevan repojen omalle koneelle. 
+✅ **Clone →** kopioi olemassa olevan repojen omalle koneelle.  
 ✅ **Pull / Push →** tuo muutokset muilta ja lähettää omat muutokset jaettuun repositorioon.  
 
 ## **🔹 Gitin käyttö**
