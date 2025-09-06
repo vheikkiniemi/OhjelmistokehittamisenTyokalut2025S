@@ -244,4 +244,4 @@ jobs:
 * Git ratkaisee ongelman: **miten hallita ja yhdistää koodimuutoksia**.
 * CI/CD ratkaisee ongelman: **miten varmistaa laatu ja julkaista nopeasti**.
 * Visual Studio Code on työkalu, joka yhdistää nämä: **helppo aloittaa, ammattimainen käytössä**.
-* GitHub Actions tuo automaation → **ei enää erillisiä manuaalisia vaiheita**
+* GitHub Actions tuo automaation: **ei enää erillisiä manuaalisia vaiheita**
