@@ -32,8 +32,10 @@
 ## 📝 Vaihe 3: Asenna Live Server -laajennus
 
 1. VS Codessa → vasemmasta sivupalkista **Extensions** (kuutio-ikoni).
-2. Hae **Live Preview** (Julkaisija: *Microsoft*).
+2. Hae **Live Server** (Julkaisija: *Ritwick Dey*).
 3. Klikkaa **Install**.
+
+![alt text](image.png)
 
 ---
 

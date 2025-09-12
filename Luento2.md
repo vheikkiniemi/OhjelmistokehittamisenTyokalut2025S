@@ -154,7 +154,7 @@
 
     * Helppo käyttää aloittelijoille
     * Tuki kymmenille ohjelmointikielille
-    * **Extensions** (esim. Live Preview) tekevät siitä joustavan
+    * **Extensions** (esim. Live Server) tekevät siitä joustavan
     * Integroitu Git-tuki → commitit suoraan editorista
     * Ilmainen ja kevyt
 
