@@ -330,10 +330,6 @@ Kun ymmärrät sanat kuten **komento, argumentti, parametri, pipe ja skripti**, 
 
 ---
 
-Loistava idea 👌 Tämä taulukko auttaa opiskelijoita hahmottamaan, mitkä komentotulkkiympäristöt kuuluvat mihinkin käyttöjärjestelmään, ja mitä vaihtoehtoja voi asentaa lisäksi.
-
----
-
 # 🖥️ Käyttöjärjestelmät ja komentorivit
 
 | Käyttöjärjestelmä                                      | Oletuskomentotulkki                      | Vaihtoehdot / saatavilla olevat komentotulkit                                        | Huomioita                                                                                                                |
