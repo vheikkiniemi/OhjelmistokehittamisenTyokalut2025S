@@ -491,8 +491,6 @@ python -c "print('OK from VS Code')"
 
 ---
 
-## *
-
 > [!TIP]  
 > ***Mitä näillä kolmella yhdessä saat VS Codessa?***  
 > **Monialustainen automaatio**: PowerShell (Windows-hallinta), Bash (Linux/DevOps), Python (liima + logiikka).  
