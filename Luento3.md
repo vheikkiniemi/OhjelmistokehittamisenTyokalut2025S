@@ -357,3 +357,134 @@ Kun ymmärrät sanat kuten **komento, argumentti, parametri, pipe ja skripti**, 
 > **Erikoisjärjestelmät (AIX, Solaris, Android)** käyttävät usein perinteisiä shellejä (ksh, sh), mutta vaihtoehdot ovat asennettavissa.  
 
 ---
+
+# **🖥️ Visual Studio Code ja komentotulkit**
+
+## **1. PowerShell VS Codessa**
+
+### **Asennus (tarkista ennen asennusta onko jo asennettu)**
+
+**Windows**
+
+1. Asenna **PowerShell 7** (pwsh) → (Microsoft Store tai msi).
+2. Avaa VS Code → Extensions (Ctrl+Shift+X) → asenna **“PowerShell” (Microsoft)**.
+3. Terminal → **Select Default Profile** → valitse **PowerShell** → **+** avaa uusi terminaali.
+
+**macOS / Linux**
+
+1. Asenna PowerShell 7 paketinhallinnasta (brew/apt/yum/snap).
+2. VS Code → Extensions → **PowerShell**.
+3. Terminal → Select Default Profile → **pwsh**.
+
+> [!TIP]  
+> **Skriptaus ja ajaminen**: `.ps1`-tiedostot, F5/F6, integroidut terminaalit.  
+> **Debuggaus**: breakpointit, askellus, **Variables/Call Stack**.  
+> **IntelliSense**: cmdletit, parametrit, objektien ominaisuudet.  
+> **Linttaus & formatointi**: PSScriptAnalyzer (tulee laajennuksen mukana).  
+> **Testaus**: **Pester**-testit integroidulla testinäkymällä.  
+> **Automaatio**: **tasks.json** → ajota buildit/deployt PowerShell-skriptein.  
+
+---
+
+## **2. Bash VS Codessa**
+
+### **Asennus (tarkista ennen asennusta onko jo asennettu)**
+
+**Linux/macOS**
+– Bash on valmiina. VS Code → Terminal → **Select Default Profile** → **bash**.
+
+**Windows**
+Vaihtoehdot:
+
+* **Git Bash**: asenna **Git for Windows**, saat “Git Bash”-profiilin.
+* **WSL**: asenna **Windows Subsystem for Linux** (+ distro), VS Code tunnistaa **wsl**-profiilin.
+* Terminal → Select Default Profile → valitse **Git Bash** tai **WSL: Ubuntu**.
+
+*(Valinnaiset lisät)*
+
+* **ShellCheck** (linttaus): Extensions → “ShellCheck”.
+* **bash-language-server** (automaattinen täydennys): Extensions → “Bash IDE” tms.
+
+> [!TIP]  
+> **Komennot & skriptit**: `.sh`-tiedostot, shebang `#!/usr/bin/env bash`, `chmod +x`.  
+> **Debuggaus**: “Bash Debug” -laajennus (breakpointit perusskripteille).  
+> **Linttaus**: ShellCheck korjaa tyypilliset virheet.  
+> **DevOps-työ**: Docker/Kubernetes/Ansible/Make suoraan terminaalissa.  
+> **Tasks**: `tasks.json` → määritä build/test/format (esim. `bash scripts/build.sh`).  
+
+---
+
+## **3. Python VS Codessa**
+
+### **Asennus (tarkista ennen asennusta onko jo asennettu)**
+
+1. Asenna **Python 3** (Windows Store / python.org / paketinhallinta).
+2. VS Code → Extensions → **“Python” (Microsoft)** ja **“Pylance”**.
+3. Valitse tulkki: Command Palette (Ctrl+Shift+P) → **Python: Select Interpreter**.
+4. (Suositus) Luo virtuaaliympäristö:
+
+```bash
+# Windows (PowerShell)
+python -m venv .venv
+. .\.venv\Scripts\Activate.ps1
+
+# macOS/Linux
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+VS Code tunnistaa `.venv` automaattisesti.
+
+*(Valinnaiset lisät)*
+
+* **Jupyter** (notebookit), **Black**/**Ruff** (formatointi/linttaus), **pytest**.
+
+> [!TIP]  
+> **Ajo & debug**: F5, launch.json, breakpointit, muuttujien tarkastelu.  
+> **IntelliSense** (Pylance): tyypit, docstringit, koodinavigointi.  
+> **Testit**: unittest/pytest, Test Explorer.  
+> **Notebookit**: `.ipynb` Jupyter-ympäristössä (graafit, data-analytiikka).  
+> **Refaktorointi**: rename symbol, extract method, import-autot.  
+> **Tyylit**: Black/autopep8, Ruff/Flake8.  
+
+---
+
+## **4. Nopeat tarkistukset (toimiiko?)**
+
+**PowerShell-terminaalissa**
+
+```powershell
+$PSVersionTable.PSVersion
+Get-ExecutionPolicy
+```
+
+**Bash-terminaalissa**
+
+```bash
+echo $SHELL
+bash --version
+```
+
+**Python**
+
+```bash
+python --version
+python -c "print('OK from VS Code')"
+```
+---
+
+## **🖱️ Pikanäppäimiä**
+
+* **Ctrl+\`** → avaa integroitu terminaali
+* **Ctrl+Shift+P** → Command Palette
+* **F5** → aja/debuggaa ohjelma
+* **Ctrl+K Ctrl+S** → näppäinkomentojen haku
+* **Alt+Shift+F** → koodin automaattinen muotoilu
+
+---
+
+## **Mitä näillä kolmella yhdessä saat VS Codessa?**
+
+* **Monialustainen automaatio**: PowerShell (Windows-hallinta), Bash (Linux/DevOps), Python (liima + logiikka).
+* **Täysi kehityskierto**: koodi → linttaus/formatointi → testaus → debug → paketointi → deploy (Tasks/terminals/launch).
+* **Opetuksessa**: helppo näyttää samat tehtävät kolmella kielellä/kuorella, vertailla syntaksia ja painottaa oikeaa työkalua oikeaan tarkoitukseen.
