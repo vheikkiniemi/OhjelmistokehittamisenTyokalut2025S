@@ -376,6 +376,8 @@ Kun ymmärrät sanat kuten **komento, argumentti, parametri, pipe ja skripti**, 
 2. VS Code → Extensions → **PowerShell**.
 3. Terminal → Select Default Profile → **pwsh**.
 
+---
+
 > [!TIP]  
 > **Skriptaus ja ajaminen**: `.ps1`-tiedostot, F5/F6, integroidut terminaalit.  
 > **Debuggaus**: breakpointit, askellus, **Variables/Call Stack**.  
@@ -404,6 +406,8 @@ Vaihtoehdot:
 
 * **ShellCheck** (linttaus): Extensions → “ShellCheck”.
 * **bash-language-server** (automaattinen täydennys): Extensions → “Bash IDE” tms.
+
+---
 
 > [!TIP]  
 > **Komennot & skriptit**: `.sh`-tiedostot, shebang `#!/usr/bin/env bash`, `chmod +x`.  
@@ -438,6 +442,8 @@ VS Code tunnistaa `.venv` automaattisesti.
 *(Valinnaiset lisät)*
 
 * **Jupyter** (notebookit), **Black**/**Ruff** (formatointi/linttaus), **pytest**.
+
+---
 
 > [!TIP]  
 > **Ajo & debug**: F5, launch.json, breakpointit, muuttujien tarkastelu.  
