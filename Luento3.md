@@ -30,6 +30,8 @@
 * **Muistettavat komennot:** Paljon eri komentoja ja parametreja.
 * **Virhealttius:** Väärä komento voi johtaa suuriin ongelmiin (esim. `rm -rf /`).
 
+---
+
 > [!TIP]  
 > Komentorivin tunteminen on **must**-juttu IT-alalla toimivalle
 
@@ -489,8 +491,10 @@ python -c "print('OK from VS Code')"
 
 ---
 
-## **Mitä näillä kolmella yhdessä saat VS Codessa?**
+## *
 
-* **Monialustainen automaatio**: PowerShell (Windows-hallinta), Bash (Linux/DevOps), Python (liima + logiikka).
-* **Täysi kehityskierto**: koodi → linttaus/formatointi → testaus → debug → paketointi → deploy (Tasks/terminals/launch).
-* **Opetuksessa**: helppo näyttää samat tehtävät kolmella kielellä/kuorella, vertailla syntaksia ja painottaa oikeaa työkalua oikeaan tarkoitukseen.
+> [!TIP]  
+> ***Mitä näillä kolmella yhdessä saat VS Codessa?***  
+> **Monialustainen automaatio**: PowerShell (Windows-hallinta), Bash (Linux/DevOps), Python (liima + logiikka).  
+> **Täysi kehityskierto**: koodi → linttaus/formatointi → testaus → debug → paketointi → deploy (Tasks/terminals/launch).  
+> **Opetuksessa**: helppo näyttää samat tehtävät kolmella kielellä/kuorella, vertailla syntaksia ja painottaa oikeaa työkalua oikeaan tarkoitukseen.  
