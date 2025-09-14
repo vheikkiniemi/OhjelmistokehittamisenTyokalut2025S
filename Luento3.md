@@ -1,22 +1,22 @@
 > [!NOTE]
 > Materiaali on luotu ChatGPT:n ja Copilotin avulla.
 
-# **🖥️ Johdatus komentoriviin**
+# **🖥️ Johdatus komentoriviin ja komentotulkkeihin**
 
 ## **1. Komentorivi yleisesti**
 
-### **🔹 Historia**
+### **Historia**
 
 * **1960–1970-luku:** Tietokoneiden käyttö perustui tekstipohjaisiin komentoihin terminaaleissa (esim. UNIX, MS-DOS).
 * **1980-luku:** Graafiset käyttöliittymät (GUI) yleistyivät, mutta komentorivit säilyivät tehokäyttäjien työkaluina.
 * **Nykyään:** Komentorivi on edelleen keskeinen työkalu ohjelmistokehityksessä, järjestelmänhallinnassa, DevOpsissa ja tietoturvassa.
 
-### **🔹 Mikä juttu?**
+### **Mikä juttu?**
 
 * Antaa käyttäjälle tarvittaessa suoran pääsyn käyttöjärjestelmään ja ohjelmiin.
 * Mahdollistaa **automaation** ja toistettavat prosessit komento- ja skriptipohjaisesti.
 
-### **🔹 Miksi?**
+### **Miksi?**
 
 * **Tehokkuus:** Usein nopeampaa kuin graafisen käyttöliittymän kautta.
 * **Automaation mahdollisuus:** Monimutkaisia prosesseja voi ajaa yhdellä skriptillä.
@@ -24,7 +24,7 @@
 * **Kattavuus:** Monet järjestelmän toiminnot löytyvät vain komentorivin kautta.
 * **Ajattomuus:** Samat komennot voivat toimia vuodesta ja vuosikymmenestä toiseen.
 
-### **🔹 Haasteet**
+### **Haasteet**
 
 * **Oppimiskynnys:** Ei yhtä intuitiivinen kuin kuvakkeet ja valikot.
 * **Muistettavat komennot:** Paljon eri komentoja ja parametreja.
@@ -39,19 +39,19 @@
 
 ## **2. PowerShell**
 
-### **🔹 Historia**
+### **Historia**
 
 * Julkaistiin **2006** Microsoftin toimesta.
 * Kehitettiin korvaamaan MS-DOS ja vanha Command Prompt (cmd.exe).
 * Huhut kertoo, että haluttiin tuoda Linuxista tuttu lähestyminen Windows-ympäristöön.
 * Rakennettu **.NET Frameworkin** ja myöhemmin .NET Coren päälle → toimii nykyään myös Linuxissa ja macOS\:ssä.
 
-### **🔹 Mikä juttu?**
+### **Mikä juttu?**
 
 * Tehokas työkalu erityisesti **Windows-järjestelmien hallintaan**.
 * Käytössä järjestelmänvalvojilla, DevOps-asiantuntijoilla ja pilvipalveluiden hallinnassa.
 
-### **🔹 Yleistä**
+### **Yleistä**
 
 * Komennot ovat **objekti-pohjaisia cmdletejä**, esim. `Get-Process`, `Set-Item`.
 * Tukee skriptausta (`.ps1`-tiedostot).
@@ -71,18 +71,18 @@ New-Item -ItemType Directory -Path "C:\Testi"
 
 ## **3. Bash (Bourne Again SHell)**
 
-### **🔹 Historia**
+### **Historia**
 
 * Kehitetty **1989** osana GNU-projektia (Brian Fox).
 * Korvasi alkuperäisen UNIX Bourne Shellin (sh).
 * Nykyään yleisin komentotulkki Linuxissa, käytössä myös macOS\:ssä.
 
-### **🔹 Mikä juttu?**
+### **Mikä juttu?**
 
 * Pääsy käyttöjärjestelmän ytimeen ja ohjelmiin tekstipohjaisesti.
 * Erittäin tärkeä **Linux-järjestelmänhallinnassa, palvelinten ylläpidossa ja ohjelmistokehityksessä**.
 
-### **🔹 Yleistä**
+### **Yleistä**
 
 * Komennot ovat yhdisteltävissä (pipe `|`, uudelleenohjaukset).
 * Tukee skriptausta (`.sh`-tiedostot).
@@ -105,19 +105,19 @@ grep "error" loki.txt
 
 ## **4. Python komentorivin työkaluna**
 
-### **🔹 Historia**
+### **Historia**
 
 * Kehittäjä: **Guido van Rossum**, julkaistu 1991.
 * Ei alun perin komentotulkki, mutta nykyään yksi maailman suosituimmista skriptikielistä.
 * Pythonia käytetään komentorivin kautta interpreterillä (`python` tai `python3`).
 
-### **🔹 Mikä juttu?**
+### **Mikä juttu?**
 
 * Soveltuu komentoriviltä ajettavien skriptien kirjoittamiseen.
 * Käytetään paljon **automaation, datankäsittelyn ja web-palveluiden hallintaan**.
 * Yhdistää ohjelmoinnin ja komentorivin vahvuudet.
 
-### **🔹 Yleistä**
+### **Yleistä**
 
 * Selkeä syntaksi → helppo oppia ja ihastua.
 * Laaja kirjastoekosysteemi.
