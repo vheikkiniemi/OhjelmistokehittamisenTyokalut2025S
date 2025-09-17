@@ -1,7 +1,7 @@
 > [!NOTE]
 > Materiaali on luotu ChatGPT:n ja Copilotin avulla.
 
-# Oppimistehtävä: Komentorivi tutuksi
+# Viikko 3: Komentorivi tutuksi
 
 ## 🎯 Tavoite
 - Ottaa käyttöön kolme eri komentotulkkia Visual Studio Codessa: **PowerShell**, **Git Bash** ja **Python**.
