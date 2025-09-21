@@ -1,7 +1,7 @@
 > [!NOTE]
 > Materiaali on luotu ChatGPT:n ja Copilotin avulla.
 
-# **🛡️ Sandboxing ja virtualisointiratkaisut**
+# **🛡️ Kehitysympäristön eristäminen**
 
 ## **1. Mitä on sandboxing?**
 
