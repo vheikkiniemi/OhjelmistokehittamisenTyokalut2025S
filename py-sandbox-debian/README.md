@@ -6,13 +6,13 @@ A Debian-based Docker image with:
 
 Enables SSH access as the root user.
 
-## 🔧 Build and Push to Docker Hub
+## 🔧 ONLY TEACHER: Build and Push to Docker Hub
 
 ```bash
 docker buildx build --platform linux/amd64,linux/arm64 -t vheikkiniemi/py-sandbox-debian:v1.0 --push .
 ```
 
-## ▶️ Run with docker-compose
+## ▶️ ONLY TEACHER: Run with docker-compose
 
 ```bash
 docker-compose up -d

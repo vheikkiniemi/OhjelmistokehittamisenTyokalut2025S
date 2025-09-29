@@ -71,7 +71,7 @@
    ssh root@localhost -p 2222
    ```
 
-7. Nyt ssh-yhteys pitäisi olla käytössä ja VSC pystytään yhdistämään. Hankaluus on se, että portti 2222 tuottaa haastetta. Jouduin tekemään seuraavaa:
+7. Nyt ssh-yhteys pitäisi olla käytössä ja VSC pystytään yhdistämään.
 
 ---
 
