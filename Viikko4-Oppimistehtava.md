@@ -45,14 +45,60 @@
 2. Käynnistä Debian-kontti:
 
    ```bash
-   docker run -it --name py-sandbox-debian debian:latest bash
-   ```
-3. Asenna tarvittavat työkalut konttiin:
+   docker run -it --name py-sandbox-debian -p 2222:22 debian:latest bash
+   ``` 
+
+3. Asenna tarvittavat työkalut konttiin (edellinen komento avaa komentotulkin käynnissä olevasta Docker-kontista):
 
    ```bash
    apt update && apt -y install python3 openssh-server nano
    ```
-4. (Valinnainen) Luo oma image snapshotiksi:
+
+4. Asetetaan root-käyttäjälle salasana (edelleen toimitaan Docker-kontin komentoriviltä)
+   ```bash
+   echo 'root:DockerPassword123' | chpasswd
+   ```
+
+5. Muutetaan ssh-ohjelman asetuksia ja käynnistetään (edelleen toimitaan Docker-kontin komentoriviltä)
+   ```bash
+   mkdir /var/run/sshd
+   sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+   /usr/sbin/sshd
+   ```
+
+6. Otetaan isäntäkoneesta ssh-yhteys kontin koneeseen
+   ```bash
+   ssh root@localhost -p 2222
+   ```
+
+7. Nyt ssh-yhteys pitäisi olla käytössä ja VSC pystytään yhdistämään. Hankaluus on se, että portti 2222 tuottaa haastetta. Jouduin tekemään seuraavaa:
+
+---
+
+**VS Code Remote-SSH asetukset**
+
+Jos manuaalinen SSH toimii, voit lisätä yhteyden VS Codeen näin:
+
+1. Avaa komentopaletti: `Ctrl+Shift+P`
+2. Valitse: `Remote-SSH: Add New SSH Host`
+3. Syötä:
+
+```bash
+ssh root@localhost -p 2222
+```
+
+4. Valitse `config`-tiedosto, johon yhteys tallennetaan (esim. `~/.ssh/config`)
+5. Tarkista, että tiedostossa on rivi:
+
+```ssh
+Host docker-debian
+    HostName localhost
+    User root
+    Port 2222
+```
+---
+
+8. (Valinnainen) Luo oma image snapshotiksi:
 
    ```bash
    docker commit py-sandbox-debian debian-sandbox:v1

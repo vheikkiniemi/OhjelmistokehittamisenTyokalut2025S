@@ -1,0 +1,10 @@
+services:
+  py-sandbox-debian:
+    image: vheikkiniemi/py-sandbox-debian:v1.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "2222:22"
+    container_name: py-sandbox-debian
+    restart: unless-stopped
