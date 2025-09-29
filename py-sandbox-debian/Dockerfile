@@ -1,25 +1,19 @@
 FROM debian:latest
 
-# Estetään interaktiiviset kysymykset
+# Preventing interactive questions
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Asennetaan tarvittavat paketit
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
+# Installing the required packages
+RUN apt update && \
+    apt install -y \
         openssh-server \
-        nano \
-        python3 \
-        ca-certificates && \
+        python3 && \
     mkdir -p /var/run/sshd && \
     echo 'root:DockerPassword123' | chpasswd && \
-    sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config && \
-    sed -i 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' /etc/pam.d/sshd && \
-    echo "export VISIBLE=now" >> /etc/profile && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+    sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 
-# Avaa SSH-portti
+# Open SSH port
 EXPOSE 22
 
-# Käynnistää SSH-palvelimen
+# Starts the SSH server
 CMD ["/usr/sbin/sshd", "-D"]
