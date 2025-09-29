@@ -1,6 +1,6 @@
 services:
   py-sandbox-debian:
-    image: vheikkiniemi/py-sandbox-debian:v1.0
+    image: vheikkiniemi/py-sandbox-debian:v1.1
     build:
       context: .
       dockerfile: Dockerfile

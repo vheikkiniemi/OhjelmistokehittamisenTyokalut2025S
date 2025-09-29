@@ -3,7 +3,6 @@
 A Debian-based Docker image with:
 - OpenSSH server
 - Python3
-- Nano editor
 
 Enables SSH access as the root user.
 
@@ -33,7 +32,7 @@ ssh root@localhost -p 2222
 2. Add the following to your `~/.ssh/config`:
 
 ```ssh
-Host docker-debian
+Host py-sandbox-debian
     HostName localhost
     User root
     Port 2222
