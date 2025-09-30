@@ -2,15 +2,16 @@ services:
   py-sandbox-debian:
     image: vheikkiniemi/py-sandbox-debian:v1.1
     ports:
-      - "2222:22"
+      - "0.0.0.0:2222:22"
     container_name: py-sandbox-debian
     restart: unless-stopped
 
 # Step 1: Create a new folder (e.g. py-sandbox-debian) 
-# Step 2: Download the docker-compose.yml file into the folder
-# Step 3: Build and start the container in the folder with command: docker compose up -d
-# Step 4: Verify the container is running with command: docker ps
+# Step 2: Download the docker-compose.yml file to the folder
+# Step 3: Build and start the container in the folder with the command: docker compose up -d
+# Step 4: Verify the container is running with the command: docker ps
 # Step 5: Interact with the container: docker exec -it py-sandbox-debian bash
 # Play and enjoy!
-# Step 6: Stop the container with command: docker compose down
-# Step 7: Remove the container's image: docker image rm <image_name>
+# Step 6: Stop the container with the command: docker compose down
+# Step 7: Check the container image id with the command: sudo docker images
+# Step 8: Remove container image by id (example's id is example): docker image rm c3bcf3fec48d
